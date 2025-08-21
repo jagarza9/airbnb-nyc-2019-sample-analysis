@@ -68,3 +68,45 @@ airbnb-nyc-2019-analysis/
 └─ reports/
 ├─ figures/ <- exported PNGs for README
 └─ tableau/ <- Tableau packaged workbook (.twbx)
+
+---
+
+## ⚙️ Setup & How to Run
+
+1. Clone this repository  
+   git clone https://github.com/jagarza9/airbnb-nyc-2019-sample-analysis.git  
+   cd airbnb-nyc-2019-sample-analysis  
+
+2. Create a virtual environment and install dependencies  
+   python -m venv .venv  
+   ## Git Bash  
+   source .venv/Scripts/activate  
+   ## PowerShell  
+   .\.venv\Scripts\Activate.ps1  
+
+   pip install -r requirements.txt  
+
+3. Run Jupyter Notebook  
+   jupyter notebook .  
+   Then open: notebooks/01_airbnb_nyc_2019.ipynb  
+
+4. Tableau  
+   data/processed/nyc_airbnb_2019_clean.csv  
+   Or open the packaged workbook: reports/tableau/airbnb_nyc_2019.twbx  
+
+📊 Tableau Dashboard  
+The cleaned dataset was visualized in Tableau to provide interactive insights:
+
+- KPIs: Total listings, average & median price, total reviews  
+- Map: Listings across NYC by borough & room type  
+- Bar charts: Avg price by borough, top 10 neighbourhoods  
+- Scatter: Price vs number of reviews  
+
+📂 File: reports/tableau/airbnb_nyc_2019.twbx  
+🖼️ Preview: ![Tableau Dashboard Preview](reports/figures/Db_nyc_2019.png)
+
+📜 License  
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+
+
